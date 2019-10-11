@@ -2,17 +2,13 @@
 
 ## Assignment 1
 
-```markdown
 Syntax highlighted code block
 
 # Question 1
 ## (a)
-
-\begin{proof}
+$Proof: $
 Given that the transform of $Z_{m \times n}$ such that $\widehat{Z}_{m \times n} = A_m Z A^\top_n$ where $\{A_n\}$ satisfies $A^\top_n A_n = D_n$ such that $D_n$ is diagonal. Want to show $Z = D^{-1}_m A^\top_m \widehat{Z} A_n D^{-1}_n$. 
 Consider that
-\begin{equation*}
-\begin{split}
     D^{-1}_m A^\top_m \widehat{Z} A_n D^{-1}_n & = D^{-1}_m A^\top_m A_m Z A^\top_n A_n D^{-1}_n\\
     & = A_m A^\top_m A^\top_m A_m Z A^\top_n A_n A_n A^\top_n\\
     & = D^{-1}_m D_m Z A^\top_n A_n A_n A^\top_n\\
@@ -20,15 +16,11 @@ Consider that
     & = Z D_n D^{-1}_n\\
     & = ZI\\
     & = Z
-\end{split}
-\end{equation*}
 Hence the original image can be constructed by $Z = D^{-1}_m A^\top_m \widehat{Z} A_n D^{-1}_n$.
-\end{proof}
 
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
