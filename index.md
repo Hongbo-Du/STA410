@@ -1,25 +1,29 @@
-## Welcome to GitHub Pages
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'], inlineMath: [['$','$']] } }); </script>
 
-You can use the [editor on GitHub](https://github.com/hdu214/STA410/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Assignment 1
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Question 1
+## (a)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
+\begin{proof}
+Given that the transform of $Z_{m \times n}$ such that $\widehat{Z}_{m \times n} = A_m Z A^\top_n$ where $\{A_n\}$ satisfies $A^\top_n A_n = D_n$ such that $D_n$ is diagonal. Want to show $Z = D^{-1}_m A^\top_m \widehat{Z} A_n D^{-1}_n$. 
+Consider that
+\begin{equation*}
+\begin{split}
+    D^{-1}_m A^\top_m \widehat{Z} A_n D^{-1}_n & = D^{-1}_m A^\top_m A_m Z A^\top_n A_n D^{-1}_n\\
+    & = A_m A^\top_m A^\top_m A_m Z A^\top_n A_n A_n A^\top_n\\
+    & = D^{-1}_m D_m Z A^\top_n A_n A_n A^\top_n\\
+    & = I^{-1}Z D_n D^{-1}_n\\
+    & = Z D_n D^{-1}_n\\
+    & = ZI\\
+    & = Z
+\end{split}
+\end{equation*}
+Hence the original image can be constructed by $Z = D^{-1}_m A^\top_m \widehat{Z} A_n D^{-1}_n$.
+\end{proof}
 
 **Bold** and _Italic_ and `Code` text
 
