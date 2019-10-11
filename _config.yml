@@ -1,1 +1,9 @@
 theme: jekyll-theme-minimal
+
+title: [STA410 Statistical Computation]
+description: [This website contains mostly my coursework in STA410. All questions were retrieved via Quercus and they were
+designed by professor Keith Knight. All solutions are written by Hongbo Du.]
+github:
+  is_project_page: false
+
+markdown: kramdown
